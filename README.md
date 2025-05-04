@@ -23,7 +23,7 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
 
 **Fitur Proyek**
 
-- Preprocessing data (label encoding, scaling)
+- Preprocessing data
 - Pembagian data train/test
 - Pelatihan model:
   - Decision Tree
@@ -35,11 +35,12 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
 
 **PreProcessing**
 
-Menggabungkan Data Train dan Test  
-Pelabelan columns (meski pada dataset tidak ada label, tapi ada keterangan tentang labelnya dari dokumentasi asli dataset NSL-KDD)
-
-- def load_and_preprocess_dataset(train_path, test_path)
-
+- Menggabungkan Data Train dan Test
+  - def load_and_preprocess_dataset(train_path, test_path)
+- Pelabelan columns (meski pada dataset tidak ada label, tapi ada keterangan tentang labelnya dari dokumentasi asli dataset NSL-KDD)
+  - columns = [....]
+- Dropping
+  - df = pd.concat([train_df, test_df], ignore_index=True)
 File :  
 - [preprocessing.py](./preprocessing.py)
 - [columns.txt](./columns.txt)
