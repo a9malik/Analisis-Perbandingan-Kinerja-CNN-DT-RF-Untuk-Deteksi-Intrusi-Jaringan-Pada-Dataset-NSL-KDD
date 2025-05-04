@@ -41,6 +41,11 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
   - columns = [....]
 - Dropping (Column Removal)
   - df = pd.concat([train_df, test_df], ignore_index=True)
+- Mengubah fitur kategorikal menjadi bentuk numerik (karena model tidak bisa memproses data bertipe string, LabelEncoder memberikan angka mulai dari 0)
+  - for col in ['protocol_type', 'service', 'flag']:
+    - df[col] = LabelEncoder().fit_transform(df[col])
+- Mengubah label menjadi numerik biner (0 untuk normal, 1 untuk serangan/intrusi)
+  - df['label'] = df['label'].apply(lambda x: 0 if x == 'normal' else 1)
 
 File :  [preprocessing.py](./preprocessing.py) dan [columns.txt](./columns.txt)
 
