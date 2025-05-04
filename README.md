@@ -1,0 +1,1 @@
+# Analisis-Perbandingan-Kinerja-CNN-DT-RF-Untuk-Deteksi-Intrusi-Jaringan-Pada-Dataset-NSL-KDD
