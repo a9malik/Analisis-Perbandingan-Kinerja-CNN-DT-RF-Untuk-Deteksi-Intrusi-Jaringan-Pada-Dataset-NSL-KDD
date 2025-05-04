@@ -8,3 +8,16 @@ Proyek ini bertujuan untuk membandingkan kinerja Algoritma, Convolutional Networ
 Di era transformasi digital, serangan siber menjadi ancaman serius terhadap keamanan infrastruktur jaringan. Intrusion Detection System (IDS) merupakan salah satu solusi penting untuk mendeteksi aktivitas jaringan yang mencurigakan. Namun, metode deteksi konvensional seperti signature-based dan anomaly-based masih memiliki keterbatasan, terutama dalam mendeteksi serangan baru dan dalam mengurangi tingkat false positive. Oleh karena itu, pendekatan berbasis machine learning semakin banyak digunakan untuk meningkatkan efektivitas deteksi intrusi.
 Penelitian ini bertujuan untuk menganalisis dan membandingkan kinerja tiga algoritma klasifikasi, yaitu Convolutional Neural Network (CNN), Decision Tree (DT), dan Random Forest (RF), dalam mendeteksi intrusi jaringan menggunakan dataset NSL-KDD. Dataset ini merupakan versi perbaikan dari KDD Cup 99 dan banyak digunakan sebagai benchmark dalam penelitian IDS. Setiap algoritma diuji menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score untuk mengetahui tingkat efektivitas dalam mengklasifikasi trafik jaringan sebagai normal atau serangan.
 Hasil penelitian menunjukkan bahwa CNN memiliki performa yang lebih baik dalam mendeteksi pola serangan secara kompleks dibandingkan DT dan RF, meskipun membutuhkan waktu pelatihan yang lebih lama. Sementara itu, Random Forest menunjukkan kinerja yang stabil dan cukup tinggi, sedangkan Decision Tree memiliki waktu pelatihan tercepat namun dengan akurasi yang lebih rendah.
+
+**Dataset**
+
+NSL-KDD  Dataset bechmark yang banyak digunakan untuk penelitian dalam bidang Intrusion Detection System (IDS). Dataset ini merupakan versi perbaikan dari KDD Cup 99 dengan menghilangkan data duplikat dan redundan, sehingga lebih seimbang dan realistis untuk pelatihan model machine learning.
+
+NSL-KDD berisi data lalu lintas jaringan yang diklasifikasikan ke dalam dua kategori yaitu Normal dan Intrusi (misalnya DoS, Probe, R2L, dan U2R)
+
+Setiap entri dalam dataset terdiri dari 41 fitur, termasuk fitur numerik dan kategorikal, serta satu label target.
+- KDDTrain+ : Data Pelatihan  
+- KDDTest+ : Data Pengujian
+
+Source: https://www.unb.ca/cic/datasets/nsl.html 
+
