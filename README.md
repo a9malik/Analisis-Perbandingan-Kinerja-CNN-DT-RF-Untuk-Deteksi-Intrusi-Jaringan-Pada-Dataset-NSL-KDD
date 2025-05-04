@@ -46,6 +46,9 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
     - df[col] = LabelEncoder().fit_transform(df[col])
 - Mengubah label menjadi numerik biner (0 untuk normal, 1 untuk serangan/intrusi)
   - df['label'] = df['label'].apply(lambda x: 0 if x == 'normal' else 1)
+- Memisahkan fitur dan target
+  - X = df.drop('label', axis=1)
+  - y = df['label']
 
 File :  [preprocessing.py](./preprocessing.py) dan [columns.txt](./columns.txt)
 
