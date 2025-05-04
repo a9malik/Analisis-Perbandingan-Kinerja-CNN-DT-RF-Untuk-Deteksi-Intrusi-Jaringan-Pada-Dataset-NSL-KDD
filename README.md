@@ -26,8 +26,8 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
 - Preprocessing data
 - Pembagian data train dan test
 - Pelatihan model:
-  - Decision Tree
-  - Random Forest
+  - Decision Tree (DT)
+  - Random Forest (RF)
   - Convolutional Neural Network (CNN)
 - Evaluasi akurasi
 - Visualisasi hasil
@@ -63,14 +63,14 @@ Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kemb
 
 **Pelatihan model:**
 
-- Decision Tree
+- Decision Tree (DT)
   - menggunakan kelas DecisionTreeClassifer pada library scikit-learn
     - from sklearn.tree import DecisionTreeClassifier
   - menggunakan akurasi prediksi untuk fungsi evaluasinya
     - from sklearn.metrics import accuracy_score
-- Random Forest
+- Random Forest (RF)
   - menggunakan kelas RandomForestClassifer pada library scikit-learn
     - from sklearn.ensemble import RandomForestClassifier
   - menggunakan akurasi prediksi untuk fungsi evaluasinya
     - from sklearn.metrics import accuracy_score
-- Convolusional Neural Network
+- Convolutional Neural Network (CNN)
