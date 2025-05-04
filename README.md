@@ -19,5 +19,28 @@ Setiap entri dalam dataset terdiri dari 41 fitur, termasuk fitur numerik dan kat
 - KDDTrain+ : Data Pelatihan  
 - KDDTest+ : Data Pengujian
 
-Source: https://www.unb.ca/cic/datasets/nsl.html 
+Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
+
+**Fitur Proyek**
+
+- Preprocessing data (label encoding, scaling)
+- Pembagian data train/test
+- Pelatihan model:
+  - Decision Tree
+  - Random Forest
+  - Convolutional Neural Network (CNN)
+- Evaluasi akurasi
+- Visualisasi hasil
+- Perbandingan kinerja model
+
+**PreProcessing**
+
+Menggabungkan Data Train dan Test  
+Pelabelan columns (meski pada dataset tidak ada label, tapi ada keterangan tentang labelnya dari dokumentasi asli dataset NSL-KDD)
+
+- def load_and_preprocess_dataset(train_path, test_path)
+
+File :  
+- [preprocessing.py](./preprocessing.py)
+- [columns.txt](./columns.txt)
 
