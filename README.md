@@ -74,3 +74,5 @@ Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kemb
   - menggunakan akurasi prediksi untuk fungsi evaluasinya
     - from sklearn.metrics import accuracy_score
 - Convolutional Neural Network (CNN)
+
+File :  [decision_tree.py](./decision_tree.py) , [random_forest.py](./random_forest.py) dan [cnn.py](./cnn.py)
