@@ -1,4 +1,8 @@
 # Analisis-Perbandingan-Kinerja-CNN-DT-RF-Untuk-Deteksi-Intrusi-Jaringan-Pada-Dataset-NSL-KDD
+**Deskripsi Proyek**
+
+Proyek ini bertujuan untuk membandingkan kinerja Algoritma, Convolutional Network (CNN), Decision Tree (DT) dan Random Forest (RF) dalam mendeteksi jaringan dengan berbasis dataset NSL-KDD
+
 **Abstrak**
 
 Di era transformasi digital, serangan siber menjadi ancaman serius terhadap keamanan infrastruktur jaringan. Intrusion Detection System (IDS) merupakan salah satu solusi penting untuk mendeteksi aktivitas jaringan yang mencurigakan. Namun, metode deteksi konvensional seperti signature-based dan anomaly-based masih memiliki keterbatasan, terutama dalam mendeteksi serangan baru dan dalam mengurangi tingkat false positive. Oleh karena itu, pendekatan berbasis machine learning semakin banyak digunakan untuk meningkatkan efektivitas deteksi intrusi.
