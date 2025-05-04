@@ -24,7 +24,7 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
 **Fitur Proyek**
 
 - Preprocessing data
-- Pembagian data train/test
+- Pembagian data train dan test
 - Pelatihan model:
   - Decision Tree
   - Random Forest
@@ -55,3 +55,22 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
 
 File :  [preprocessing.py](./preprocessing.py) dan [columns.txt](./columns.txt)
 
+**Pembagian Data Train dan Test**
+
+Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kembali untuk dibagi menjadi data Train dan Test  
+- Membagi Data (Train 80% dan Test 20%)
+  - X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, stratify=y, random_state=42)
+
+**Pelatihan model:**
+
+- Decision Tree
+  - menggunakan kelas DecisionTreeClassifer pada library scikit-learn
+    - from sklearn.tree import DecisionTreeClassifier
+  - menggunakan akurasi prediksi untuk fungsi evaluasinya
+    - from sklearn.metrics import accuracy_score
+- Random Forest
+  - menggunakan kelas RandomForestClassifer pada library scikit-learn
+    - from sklearn.ensemble import RandomForestClassifier
+  - menggunakan akurasi prediksi untuk fungsi evaluasinya
+    - from sklearn.metrics import accuracy_score
+- Convolusional Neural Network
