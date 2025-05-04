@@ -39,9 +39,8 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
   - def load_and_preprocess_dataset(train_path, test_path)
 - Pelabelan columns (meski pada dataset tidak ada label, tapi ada keterangan tentang labelnya dari dokumentasi asli dataset NSL-KDD)
   - columns = [....]
-- Dropping
+- Dropping (Column Removal)
   - df = pd.concat([train_df, test_df], ignore_index=True)
-File :  
-- [preprocessing.py](./preprocessing.py)
-- [columns.txt](./columns.txt)
+
+File :  [preprocessing.py](./preprocessing.py) dan [columns.txt](./columns.txt)
 
