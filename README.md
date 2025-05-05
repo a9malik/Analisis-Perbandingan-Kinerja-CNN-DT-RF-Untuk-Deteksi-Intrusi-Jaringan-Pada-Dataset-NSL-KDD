@@ -31,7 +31,6 @@ Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
   - Convolutional Neural Network (CNN)
 - Evaluasi akurasi
 - Visualisasi hasil
-- Perbandingan kinerja model
 
 **PreProcessing**
 
