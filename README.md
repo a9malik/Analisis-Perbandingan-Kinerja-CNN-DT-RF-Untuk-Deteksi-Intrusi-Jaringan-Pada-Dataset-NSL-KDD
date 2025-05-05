@@ -93,4 +93,4 @@ Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kemb
   - Melatih model dengan epoch=15 (1 epoch=1 kali seluruh dataset dilatih), batch_size=128 (jumlah sampe data yang diproses sekaligus, lebih besar maka lebih cepat proses pelatihannya tapi membutuhkan lebih banyak memori)
     - model.fit(X_train, y_train, epochs=15, batch_size=128, validation_split=0.2, verbose=1)
 
-File :  [decision_tree.py](./decision_tree.py) , [random_forest.py](./random_forest.py) dan [cnn.py](./cnn.py)
+File :  [decision_tree.py](./decision_tree.py) , [random_forest.py](./random_forest.py) , [cnn.py](./cnn.py) dan [main.py](./main.py) 
