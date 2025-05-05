@@ -82,5 +82,7 @@ Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kemb
     - from tensorflow.keras import optimizers
   - Menggunakan konvolusi 32 filter, kernel ukuran 3 dan fungsi aktivasi ReLU (Rectified Linear Unit) membuat fungsi non-linear karena dataset komplek
     - Conv1D(32, kernel_size=3, activation='relu')
+  - Menggunakan 2 layer Conv1D (untuk menangkap fitur lebih kompleks), pada dataset NSL KDD cukup menggunakan 2 layer karena dataset ini kecil dibandingkan dengan dataset gambar, seperti VGG16 (16 layer), ResNet (152 layer), atau InceptionV3 (48 layer), semakin banyak layer semakin banyak membutuhkan daya komputasi
+    - Conv1D(64, kernel_size=3, activation='relu')
 
 File :  [decision_tree.py](./decision_tree.py) , [random_forest.py](./random_forest.py) dan [cnn.py](./cnn.py)
