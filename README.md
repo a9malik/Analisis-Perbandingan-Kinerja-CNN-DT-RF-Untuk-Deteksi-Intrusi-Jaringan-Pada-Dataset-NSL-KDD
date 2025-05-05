@@ -92,5 +92,14 @@ Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kemb
     - model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
   - Melatih model dengan epoch=15 (1 epoch=1 kali seluruh dataset dilatih), batch_size=128 (jumlah sampe data yang diproses sekaligus, lebih besar maka lebih cepat proses pelatihannya tapi membutuhkan lebih banyak memori)
     - model.fit(X_train, y_train, epochs=15, batch_size=128, validation_split=0.2, verbose=1)
+  - Evaluasi Akurasi
+    Dilakukan disetiap modul model nya
+    - dt_accuracy = evaluate_decision_tree(dt_model, X_test, y_test)
+    - rf_accuracy = evaluate_random_forest(rf_model, X_test, y_test)
+    - cnn_accuracy = evaluate_cnn(cnn_model, X_test_cnn, y_test_cnn)
+  - Visualisasi hasil
+    - print(f" Akurasi Decision Tree: {dt_accuracy:.4f}")
+    - print(f" Akurasi Random Forest: {rf_accuracy:.4f}")
+    - print(f" Akurasi CNN: {cnn_accuracy:.4f}")
 
 File :  [decision_tree.py](./decision_tree.py) , [random_forest.py](./random_forest.py) , [cnn.py](./cnn.py) dan [main.py](./main.py) 
