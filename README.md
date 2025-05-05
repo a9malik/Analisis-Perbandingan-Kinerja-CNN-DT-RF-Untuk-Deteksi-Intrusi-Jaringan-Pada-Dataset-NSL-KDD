@@ -84,5 +84,13 @@ Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kemb
     - Conv1D(32, kernel_size=3, activation='relu')
   - Menggunakan 2 layer Conv1D (untuk menangkap fitur lebih kompleks), pada dataset NSL KDD cukup menggunakan 2 layer karena dataset ini kecil dibandingkan dengan dataset gambar, seperti VGG16 (16 layer), ResNet (152 layer), atau InceptionV3 (48 layer), semakin banyak layer semakin banyak membutuhkan daya komputasi
     - Conv1D(64, kernel_size=3, activation='relu')
+  - Mengelola fitur-fitur secara menyeluruh setelah fitur diekstrasi oleh layer Conv1D
+    - Dense(128, activation='relu')
+  - Output akhir dalam bentuk biner (probabilitas antara 0-1)
+    - Dense(1, activation='sigmoid')
+  - Menggunakan opimizer Adam (Adaptive Momen Estimation), cocok untuk data kompleks dan noise sepert NSL-KDD karena cepat belajar dan stabil, metric evaluasi menggunakan accuracy (presentasi prediksi yang benar)
+    - model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+  - Melatih model dengan epoch=15 (1 epoch=1 kali seluruh dataset dilatih), batch_size=128 (jumlah sampe data yang diproses sekaligus, lebih besar maka lebih cepat proses pelatihannya tapi membutuhkan lebih banyak memori)
+    - model.fit(X_train, y_train, epochs=15, batch_size=128, validation_split=0.2, verbose=1)
 
 File :  [decision_tree.py](./decision_tree.py) , [random_forest.py](./random_forest.py) dan [cnn.py](./cnn.py)
