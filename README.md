@@ -16,8 +16,8 @@ NSL-KDD  Dataset bechmark yang banyak digunakan untuk penelitian dalam bidang In
 NSL-KDD berisi data lalu lintas jaringan yang diklasifikasikan ke dalam dua kategori yaitu Normal dan Intrusi (misalnya DoS, Probe, R2L, dan U2R)
 
 Setiap entri dalam dataset terdiri dari 41 fitur, termasuk fitur numerik dan kategorikal, serta satu label target.
-- KDDTrain+ : Data Pelatihan  
-- KDDTest+ : Data Pengujian
+- KDDTrain+ : Data Pelatihan  [KDDTrain+.txt](./KDDTrain+.txt)
+- KDDTest+ : Data Pengujian   [KDDTest+.txt](./KDDTest+.txt)
 
 Sumber dataset:  [NSL-KDD (UNB)](https://www.unb.ca/cic/datasets/nsl.html)
 
