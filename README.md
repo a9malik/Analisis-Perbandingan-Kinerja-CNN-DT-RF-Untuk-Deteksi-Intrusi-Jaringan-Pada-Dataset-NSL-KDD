@@ -64,15 +64,23 @@ Setelah data digabungkan pada Tahap preprocessing, kemudian data dipisahkan kemb
 **Pelatihan model:**
 
 - Decision Tree (DT)
-  - menggunakan kelas DecisionTreeClassifer pada library scikit-learn
+  - Menggunakan kelas DecisionTreeClassifer pada library scikit-learn
     - from sklearn.tree import DecisionTreeClassifier
-  - menggunakan akurasi prediksi untuk fungsi evaluasinya
+  - Menggunakan akurasi prediksi untuk fungsi evaluasinya
     - from sklearn.metrics import accuracy_score
 - Random Forest (RF)
-  - menggunakan kelas RandomForestClassifer pada library scikit-learn
+  - Menggunakan kelas RandomForestClassifer pada library scikit-learn
     - from sklearn.ensemble import RandomForestClassifier
-  - menggunakan akurasi prediksi untuk fungsi evaluasinya
+  - Menggunakan akurasi prediksi untuk fungsi evaluasinya
     - from sklearn.metrics import accuracy_score
 - Convolutional Neural Network (CNN)
+  - Menggunakan framework Tensorflow dengan interface keras yang menambahkan layer Sequential (satu per satu secara berurutan)
+    - from tensorflow.keras.models import Sequential
+  - Menggunakan layer konvolusi 1 Dimensi karena Dataset Tabular (berbentuk tabel) bukan data gambar
+    - from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, Input
+  - Menggunakan optimizer
+    - from tensorflow.keras import optimizers
+  - Menggunakan konvolusi 32 filter, kernel ukuran 3 dan fungsi aktivasi ReLU (Rectified Linear Unit) membuat fungsi non-linear karena dataset komplek
+    - Conv1D(32, kernel_size=3, activation='relu')
 
 File :  [decision_tree.py](./decision_tree.py) , [random_forest.py](./random_forest.py) dan [cnn.py](./cnn.py)
